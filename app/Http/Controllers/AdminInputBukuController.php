@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminInputBukuController extends Controller
 {
-    public function index ()
+    public function index()
     {
         $faker = Faker::create('id_ID');
         $books = Book::all();
@@ -19,7 +19,7 @@ class AdminInputBukuController extends Controller
         return view('admin.input_buku.index', compact('books', 'bookId', 'user'));
     }
 
-    public function addBook (Request $req)
+    public function addBook(Request $req)
     {
         Book::create([
             'id_buku' => $req->id_buku,
@@ -58,7 +58,8 @@ class AdminInputBukuController extends Controller
         return back()->with('success', 'Data Berhasil Diubah');
     }
 
-    public function deleteBook($id_buku){
+    public function deleteBook($id_buku)
+    {
         $book = Book::where('id_buku', $id_buku);
         $book->delete();
 

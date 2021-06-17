@@ -5,7 +5,7 @@
                 <h5 class="modal-title" id="deleteModalLabel">Delete Data</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="{{url($user->akses.'/delete-book',$book->id_buku)}}" method="POST">
+            <form action="{{url($user->akses.'/delete-book')}}" method="POST">
                 @csrf
                 @method('delete')
                 <input type="hidden" name="id_buku" id="delete-id">

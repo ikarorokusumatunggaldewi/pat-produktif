@@ -47,7 +47,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Input Distributor</a></li>
-                            <li><a class="dropdown-item" href="#">Input Buku</a></li>
+                            <li><a class="dropdown-item" href="{{url(Auth::user()->akses.'/input-buku')}}">Input Buku</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

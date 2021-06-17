@@ -57,8 +57,8 @@
         </form>
     </div>
 
-    <div class="card-body mt-3">
-        <table class="table table-bordered">
+    <div class="card-body mt-3 mr-3">
+        <table class="table table-bordered border-2">
             <thead>
                 <tr>
                     <th scope="col">Kode Buku</th>
